@@ -103,6 +103,47 @@
             </a>
           </li>
         </ul>
+        <button
+          class="btn btn-link nav-link px-0 px-lg-2 py-2 dropdown-toggle d-flex align-items-center"
+          id="bd-theme"
+          type="button"
+          aria-expanded="false"
+          data-bs-toggle="dropdown"
+          data-bs-display="static"
+          aria-label="Toggle theme (dark)"
+        >
+          <svg class="bi my-1 theme-icon-active" aria-hidden="true">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul
+          class="offcanvas dropdown-menu show position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px"
+          data-bs-popper="static"
+          id="dropdown"
+          data-bs-theme="light"
+        >
+          <li>
+            <button
+              type="button"
+              class="dropdown-item d-flex align-items-center"
+              data-bs-theme-value="light"
+              aria-pressed="false"
+            >
+              Light Mode
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="dropdown-item d-flex align-items-center"
+              data-bs-theme-value="dark"
+              aria-pressed="false"
+            >
+              Dark Mode
+            </button>
+          </li>
+        </ul>
       </div>
       <div class="">
         <div class="border-bottom px-5">
@@ -378,6 +419,27 @@
         newTheme === "light"
           ? `<i class="bi bi-brightness-high-fill"></i>`
           : `<i class="bi bi-moon-fill"></i>`;
+    });
+  </script>
+  <script
+    defer=""
+    src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+  ></script>
+  <script>
+    // JavaScript to toggle the theme using the dropdown buttons
+    const themeButtons = document.querySelectorAll("[data-bs-theme-value]");
+
+    themeButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedTheme = button.getAttribute("data-bs-theme-value");
+        htmlElement.setAttribute("data-bs-theme", selectedTheme);
+
+        // Update the aria-pressed attribute for accessibility
+        themeButtons.forEach((btn) =>
+          btn.setAttribute("aria-pressed", btn === button ? "true" : "false")
+        );
+      });
     });
   </script>
 </html>
