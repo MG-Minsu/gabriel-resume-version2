@@ -28,14 +28,24 @@
         id="offcanvasWithBothOptions"
         style="width: 280px; background-color: #712cf9"
       >
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-          data-bs-target="#bdNavbar"
-        ></button>
-        <hr />
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            data-bs-target="#bdNavbar"
+          ></button>
+          <div class="d-flex justify-content-end">
+            <button
+              id="themeToggle"
+              class="btn btn-outline pb-2 rounded-circle"
+            >
+              <i class="bi bi-brightness-high-fill"></i>
+            </button>
+          </div>
+        </div>
+
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <a href="#" class="nav-link active" aria-current="page">
@@ -101,47 +111,6 @@
               </svg>
               Customers
             </a>
-          </li>
-        </ul>
-        <button
-          class="btn btn-link nav-link px-0 px-lg-2 py-2 dropdown-toggle d-flex align-items-center"
-          id="bd-theme"
-          type="button"
-          aria-expanded="false"
-          data-bs-toggle="dropdown"
-          data-bs-display="static"
-          aria-label="Toggle theme (dark)"
-        >
-          <svg class="bi my-1 theme-icon-active" aria-hidden="true">
-            <use href="#moon-stars-fill"></use>
-          </svg>
-          <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-        </button>
-        <ul
-          class="offcanvas dropdown-menu show position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px"
-          data-bs-popper="static"
-          id="dropdown"
-          data-bs-theme="light"
-        >
-          <li>
-            <button
-              type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-theme-value="light"
-              aria-pressed="false"
-            >
-              Light Mode
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="dropdown-item d-flex align-items-center"
-              data-bs-theme-value="dark"
-              aria-pressed="false"
-            >
-              Dark Mode
-            </button>
           </li>
         </ul>
       </div>
