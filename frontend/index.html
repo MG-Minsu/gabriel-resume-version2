@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../frontend/styles/index.css" rel="stylesheet" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="row">
+      <div
+        class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary col-4 offcanvas offcanvas-end"
+        id="offcanvasWithBothOptions"
+        style="width: 280px; background-color: #712cf9"
+      >
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          data-bs-target="#bdNavbar"
+        ></button>
+        <hr />
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg
+                class="bi pe-none me-2"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              >
+                <use xlink:href="#home"></use>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <svg
+                class="bi pe-none me-2"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              >
+                <use xlink:href="#speedometer2"></use>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <svg
+                class="bi pe-none me-2"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              >
+                <use xlink:href="#table"></use>
+              </svg>
+              Orders
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <svg
+                class="bi pe-none me-2"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              >
+                <use xlink:href="#grid"></use>
+              </svg>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <svg
+                class="bi pe-none me-2"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              >
+                <use xlink:href="#people-circle"></use>
+              </svg>
+              Customers
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <div class="border-bottom px-5">
+          <header class="d-flex flex-wrap justify-content-center py-2">
+            <div
+              href="/"
+              class="d-flex align-items-center mb-2 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            >
+              <!-- <img src="../assets/logo.png" alt="Logo" width="40" height="40" /> -->
+              <span class="fs-7 my-3"></span>
+              <!-- leave balnk -->
+            </div>
+
+            <ul class="nav nav-pills header-content">
+              <li class="nav-item">
+                <a href="#" class="nav-link" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">Hobbies</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li>
+                <div class="container">
+                  <!-- Theme Toggle Button -->
+                  <div class="d-flex justify-content-end">
+                    <button
+                      id="themeToggle"
+                      class="btn btn-outline pb-2 rounded-circle"
+                    >
+                      <i class="bi bi-brightness-high-fill"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="menu-button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <h3 class="bi bi-three-dots mx-3"></h3>
+            </button>
+          </header>
+          <!-- Menu button for small screens -->
+        </div>
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 class="display-4 fw-bold text-body-emphasis">Mathew Gabriel</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit,
+              featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+                View Resume
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Contact Me
+              </button>
+            </div>
+          </div>
+          <div class="overflow-hidden" style="max-height: 30vh">
+            <div class="container px-5">
+              <img
+                src="../assets/image.png"
+                class="img-fluid border rounded-3 shadow-lg mb-4"
+                alt="Example image"
+                width="900"
+                height="700"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- sample selection -->
+        <div class="features-icons text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                  <div class="features-icons-icon d-flex">
+                    <h1 class="bi bi-window m-auto text-primary my-2"></h1>
+                  </div>
+                  <h3>UX/UI</h3>
+                  <p class="lead mb-0">
+                    This theme will look great on any device, no matter the
+                    size!
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                  <div class="features-icons-icon d-flex">
+                    <h1 class="bi-layers m-auto text-primary my-2"></h1>
+                  </div>
+                  <h3>web System Developer</h3>
+                  <p class="lead mb-0">
+                    Featuring the latest build of the new Bootstrap 5 framework!
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                  <div class="features-icons-icon d-flex">
+                    <h1 class="bi-terminal m-auto text-primary my-2"></h1>
+                  </div>
+                  <h3>Team Player</h3>
+                  <p class="lead mb-0">
+                    Ready to use with your own content, or customize the source
+                    files!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- skills -->
+        <div class="container px-4 py-5" id="icon-grid">
+          <h2 class="pb-2 border-bottom">Icon grid</h2>
+
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+          >
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+                aria-hidden="true"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                  Programming Languages
+                </h3>
+                <p class="my-2">C++, Python, Dart, Java</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+                aria-hidden="true"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                  Programming Languages
+                </h3>
+                <p class="my-2">C++, Python, Dart, Java</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+                aria-hidden="true"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                  Programming Languages
+                </h3>
+                <p class="my-2">C++, Python, Dart, Java</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+                aria-hidden="true"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                  Programming Languages
+                </h3>
+                <p class="my-2">C++, Python, Dart, Java</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg
+                class="bi text-body-secondary flex-shrink-0 me-3"
+                width="1.75em"
+                height="1.75em"
+                aria-hidden="true"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                  Programming Languages
+                </h3>
+                <p class="my-2">C++, Python, Dart, Java</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container my-5">
+          <div
+            class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+          >
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+              <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+                Border hero with cropped image and shadows
+              </h1>
+              <p class="lead">
+                Quickly design and customize responsive mobile-first sites with
+                Bootstrap, the world’s most popular front-end open source
+                toolkit, featuring Sass variables and mixins, responsive grid
+                system, extensive prebuilt components, and powerful JavaScript
+                plugins.
+              </p>
+              <div
+                class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+              >
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+                >
+                  Primary
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4"
+                >
+                  Default
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img
+                class="rounded-lg-3"
+                src="bootstrap-docs.png"
+                alt=""
+                width="720"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // JavaScript to toggle the theme and update the icon
+    const themeToggle = document.getElementById("themeToggle");
+    const htmlElement = document.documentElement;
+
+    themeToggle.addEventListener("click", () => {
+      const currentTheme = htmlElement.getAttribute("data-bs-theme");
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      htmlElement.setAttribute("data-bs-theme", newTheme);
+
+      // Update the icon based on the new theme
+      themeToggle.innerHTML =
+        newTheme === "light"
+          ? `<i class="bi bi-brightness-high-fill"></i>`
+          : `<i class="bi bi-moon-fill"></i>`;
+    });
+  </script>
+</html>
