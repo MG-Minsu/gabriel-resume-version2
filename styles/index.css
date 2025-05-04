@@ -6,7 +6,9 @@ p {
 .header-container {
   background-color: #007bff !important;
 }
-#contact-me-button {
+#hero-container-2 > h1 {
+  font-size: 100px !important;
+  color: #d8d8d8 !important;
 }
 #landing-page {
   background-image: linear-gradient(#f6f6f6 2px, transparent 2px),
@@ -71,6 +73,9 @@ html[data-bs-theme="dark"] #landing-page {
   }
   #description-text {
     padding: 0px 20px 0px 20px !important;
+  }
+  #sub-description-text {
+    padding: 0px 140px 0px 140px !important;
   }
 }
 
