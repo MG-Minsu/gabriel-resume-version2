@@ -115,7 +115,7 @@
         </ul>
       </div>
       <div class="">
-        <div class="border-bottom px-5">
+        <div class="header-container border-bottom px-5">
           <header class="d-flex flex-wrap justify-content-center py-2">
             <div
               href="/"
@@ -128,16 +128,22 @@
 
             <ul class="nav nav-pills header-content">
               <li class="nav-item">
-                <a href="#" class="nav-link" aria-current="page">Home</a>
+                <a href="#" class="nav-link text-light" aria-current="page"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Skills</a>
+                <a href="#" class="nav-link text-light">Skills</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Projects</a>
+                <a href="#" class="nav-link text-light">Projects</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">Hobbies</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light">Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-light">About</a>
+              </li>
               <li>
                 <div class="container">
                   <!-- Theme Toggle Button -->
@@ -146,7 +152,7 @@
                       id="themeToggle"
                       class="btn btn-outline pb-2 rounded-circle"
                     >
-                      <i class="bi bi-brightness-high-fill"></i>
+                      <i class="bi bi-brightness-high-fill text-light"></i>
                     </button>
                   </div>
                 </div>
@@ -158,36 +164,75 @@
               data-bs-target="#offcanvasWithBothOptions"
               aria-controls="offcanvasWithBothOptions"
             >
-              <h3 class="bi bi-three-dots mx-3"></h3>
+              <h3 class="bi bi-three-dots mx-3 text-light"></h3>
             </button>
           </header>
           <!-- Menu button for small screens -->
         </div>
-        <div class="px-4 pt-5 my-5 text-center border-bottom">
-          <h1 class="display-4 fw-bold text-body-emphasis">Mathew Gabriel</h1>
+        <div class="px-4 pt-5 mb-5 text-center border-bottom" id="landing-page">
+          <div class="">
+            <div class="breathe-animation">
+              <!-- Change this letter to test a different one -->
+              <span class="my-5">mathew gabriel</span>
+            </div>
+            <span class="mx-2" id="name-small-screen">MG</span>
+          </div>
+          <p class="cursor typewriter-animation" id="typewriter-text">
+            Hi there, Welcome to my portfolio!
+          </p>
           <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
+            <p class="lead mb-4" id="description-text">
+              Hi, I’m Mathew — a driven computer science student with a passion
+              for tech innovation, creative design, and real-world problem
+              solving. Explore my projects, ideas, and journey as I build tools
+              and solutions that make an impact.
             </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+            <div class="d-flex gap-2 justify-content-center pb-5">
+              <button
+                class="btn btn-primary d-inline-flex align-items-center rounded-0"
+                type="button"
+              >
                 View Resume
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right mx-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
               </button>
               <button
+                class="btn btn-outline-secondary d-inline-flex align-items-center rounded-0"
                 type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
+                id="contact-me-button"
               >
                 Contact Me
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right mx-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
               </button>
             </div>
           </div>
           <div class="overflow-hidden" style="max-height: 30vh">
             <div class="container px-5">
               <img
-                src="assets/image.png"
+                src="assets/mathue.gabriel.png"
                 class="img-fluid border rounded-3 shadow-lg mb-4"
                 alt="Example image"
                 width="900"

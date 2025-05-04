@@ -3,6 +3,33 @@ p {
   font-size: 17px !important;
 }
 
+.header-container {
+  background-color: #007bff !important;
+}
+#contact-me-button {
+}
+#landing-page {
+  background-image: linear-gradient(#f6f6f6 2px, transparent 2px),
+    linear-gradient(to right, #f6f6f6 2px, transparent 2px);
+  background-size: 20px 20px;
+  background-color: #ffffff;
+  background-position: top left; /* Initial position */
+  animation: moveToBottomRight 50s linear infinite; /* Animation */
+}
+html[data-bs-theme="dark"] #landing-page {
+  background-color: #272727; /* Gray background for dark theme */
+  background-image: linear-gradient(#2e2e2e 2px, transparent 2px),
+    linear-gradient(to right, #2e2e2e 2px, transparent 2px); /* Adjusted for dark theme */
+}
+@keyframes moveToBottomRight {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: bottom right;
+  }
+}
+
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
   .header-content {
@@ -27,9 +54,124 @@ p {
   .navbar-toggler-icon {
     color: #007bff;
   }
+
+  .breathe-animation {
+    display: none !important; /* Hide the animation on small screens */
+  }
+
+  #name-small-screen {
+    display: block !important; /* Show the name on small screens */
+    font-family: "TheFont" !important;
+    font-size: clamp(2rem, 4.5rem, 6.5rem); /* Dynamically adjust font size */
+    color: #007bff;
+    text-align: center;
+  }
+  #typewriter-text {
+    display: none !important; /* Hide the typewriter text on small screens */
+  }
+  #description-text {
+    padding: 0px 20px 0px 20px !important;
+  }
 }
 
 /* Default state for the button (hidden on larger screens) */
 .menu-button {
   display: none;
+}
+
+/* Typewriter Effect */
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+.cursor {
+  position: relative;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 30px;
+  font-family: "Anonymous Pro", monospace;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+/* Animation */
+.typewriter-animation {
+  animation: typewriter 5s steps(50) 1s 1 normal both;
+  /* blinkingCursor 500ms steps(50) infinite normal; */
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkingCursor {
+  from {
+    border-right-color: rgba(89, 89, 89, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#name-small-screen {
+  display: none; /* Hide the name on small screens */
+}
+/* Name Animation */
+/* The @font-face rule is used to define a custom font that you want to use on your webpage. Here 'TheFont' is a name we give to reference the font later in CSS. The 'src' property specifies the path to the font file, and 'format' specifies the font format. */
+@font-face {
+  font-family: "TheFont";
+
+  /* Variable fonts like the one linked below allow for fine-tuned control over various font properties dynamically via CSS, such as weight ('wght'), width ('wdth'), etc. This link is where your web browser will download the font from. */
+  /* Insert the link to your custom variable font */
+  src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2")
+    format("woff2");
+}
+
+.breathe-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Change the Background color of the entire screen */
+  background-color: none;
+  /* 'vw' is a viewport-width unit, 'vh' is a viewport-height unit. 1vw equals 1% of the width of the viewport, and 1vh equals 1% of the height of the viewport. This allows the font size to scale dynamically with the window size. */
+  height: 50vh;
+}
+
+.breathe-animation span {
+  font-family: "TheFont";
+
+  /* The 'clamp()' function sets a flexible font size that will never go below a minimum value and never above a maximum value. The middle value is preferred, but it will shrink or grow based on the viewport dimensions. */
+  /* Adjusts font size based on content width and viewport height */
+  font-size: clamp(0vw, 10vw, 40vh);
+
+  /* Change this to set the text color */
+  color: #007bff;
+
+  /* Center text horizontally */
+  text-align: center;
+
+  /* The 'animation' property applies the 'letter-breathe' keyframes to the element, making it animate over 3 seconds.'ease-in-out' makes the movement start and end slowly, and 'infinite' makes it repeat forever. */
+  /* Controls the animation (3s is the duration) */
+  animation: letter-breathe 3s ease-in-out infinite;
+}
+
+/* Keyframes define the sequence of styles that an element will go through during an animation. */
+@keyframes letter-breathe {
+  /* The 'from' and 'to' keyframes establish the initial and final states of the animation, respectively, using 'font-variation-settings'. This CSS property is used with variable fonts to adjust their weight ('wght'), width ('wdth'), etc., during the animation. */
+  from,
+  to {
+    /* Starting weight; adjust the numbers according to your specific font */
+    font-variation-settings: "wght" 100;
+  }
+
+  /* At the midpoint (50%) of the animation, the font weight changes to 900. */
+  50% {
+    /* Ending weight; adjust the numbers according to your specific font */
+    font-variation-settings: "wght" 900;
+  }
 }
