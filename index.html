@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link href="styles/index.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Mathew Gabriel</title>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
@@ -36,24 +36,15 @@
             aria-label="Close"
             data-bs-target="#bdNavbar"
           ></button>
-          <div class="d-flex justify-content-end">
-            <button
-              id="themeToggle"
-              class="btn btn-outline pb-2 rounded-circle"
-            >
-              <i class="bi bi-brightness-high-fill"></i>
-            </button>
-          </div>
+          <div class="d-flex justify-content-end"></div>
         </div>
 
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <a
-              href="#"
-              class="nav-link active"
+              href="index.html"
+              class="nav-link"
               id="contact-me-button"
-              data-bs-toggle="modal"
-              data-bs-target="#customModal"
               aria-current="page"
             >
               <svg
@@ -88,13 +79,7 @@
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              class="nav-link"
-              id="contact-me-button"
-              data-bs-toggle="modal"
-              data-bs-target="#customModal"
-            >
+            <a href="projects.html" class="nav-link" id="contact-me-button">
               <svg
                 class="bi pe-none me-2"
                 width="16"
@@ -122,15 +107,22 @@
 
             <ul class="nav nav-pills header-content">
               <li class="nav-item">
-                <a href="#" class="nav-link text-light" aria-current="page"
+                <a
+                  href="index.html"
+                  class="nav-link text-light"
+                  aria-current="page"
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item"
+                data-bs-toggle="modal"
+                data-bs-target="#customModal"
+              >
                 <a href="#" class="nav-link text-light">Skills</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-light">Projects</a>
+                <a href="projects.html" class="nav-link text-light">Projects</a>
               </li>
 
               <li>
@@ -174,9 +166,10 @@
               solving.
             </p>
             <div class="d-flex gap-2 justify-content-center pb-5">
-              <button
+              <a
                 class="btn btn-primary d-inline-flex align-items-center rounded-0"
                 type="button"
+                href="resume.html"
               >
                 View Resume
                 <svg
@@ -192,11 +185,10 @@
                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                   />
                 </svg>
-              </button>
-              <button
+              </a>
+              <a
                 class="btn btn-outline-secondary d-inline-flex align-items-center rounded-0"
-                type="button"
-                id="contact-me-button"
+                href="https://www.linkedin.com/in/mathew-gabriel-129308332/"
               >
                 See Profile
                 <svg
@@ -212,7 +204,7 @@
                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>
